@@ -1,0 +1,23 @@
+login_secreto = 'fihdelis'
+senha_secreta = 'fih@delis'
+def login(log_secreto):
+    print("Bem vindo ao nosso sistema, por favor crie usuario e senha para acesso. ")
+    usuario = str(input("Por favor, informe um usuario: "))
+   
+    if  (usuario != login_secreto): 
+        print("por favor, digite o usuario corretamente.")
+    else:
+        senha = str(input("Por favor, informe uma senha de até 8 caracteres: "))  
+    
+    qtde_carac_senha = 8
+
+    if (len(senha) < 8):
+        print("Por favor, informe uma senha de até 8 caracteres.")
+    elif senha and qtde_carac_senha >= 8:
+        print("Senha cadastrada com sucesso")
+login(login_secreto)       
+
+str = senha_secreta
+str_enc = str.encode(encoding='utf 8')
+print("Sua senha foi codificada com sucesso, ela agora é:  ")
+print(str_enc)
